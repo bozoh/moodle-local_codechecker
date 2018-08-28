@@ -79,3 +79,15 @@ After step 3 in the Sublime PHP CS section:
                "phpcs_show_quick_panel": false,
 ```
    The line with the error will still get marked and if you’ll click on it you’ll see the error text in the status bar.
+   
+### Visual Stutio Code
+
+1. Install the phpcs cli tool, in my linux, with php7.2  i install phpcs version 2.9.1, using pear `pear install PHP_CodeSniffer-2.9.1`, verion 3.x it's give me some errors.
+2. Install phpcs plugin for Visual Stutio Code:  https://marketplace.visualstudio.com/items?itemName=ikappas.phpcs.
+3. Open Visual Studion in your moodle project folder open settigs, ```CRTL + ,``` in linux, and change the workspace settings and add:  
+```
+{
+   "phpcs.standard": "local/codechecker/moodle",
+}
+```
+4. Enjoy!!!
